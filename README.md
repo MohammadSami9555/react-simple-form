@@ -1,16 +1,81 @@
-# React + Vite
+# 📩 React Simple Contact Form 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React contact form built using **controlled components** with **basic form validation**.  
+This project is created as part of **Basic React – Day 4** learning.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+## 🎯 Project Objective
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Understand **controlled inputs** in React
+- Learn basic **form validation**
+- Display **inline error messages**
+- Improve user experience with proper form feedback
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## 🛠️ Technologies Used
+
+- React JS
+- Vite
+- JavaScript (ES6)
+- CSS (No external library)
+
+
+
+## ⚙️ How the App Works
+
+1. Each input field (Name, Email, Message) is managed using React `useState`.
+2. On form submission, validation checks:
+   - All fields are required
+   - Email must follow a valid format
+3. If validation fails, error messages are shown below inputs.
+4. If validation passes:
+   - A success message is displayed
+   - The form fields are cleared
+5. No backend or API is used in this project.
+
+
+
+## 📘 What I Have Learned
+
+- How to build **controlled components** in React
+- How to manage multiple form states using `useState`
+- How to implement **client-side validation**
+- How to show **inline error messages**
+- How to disable submit button until form is valid
+- How to improve UI using pure CSS
+
+
+
+## 🧠 Core Concepts Used
+
+### Controlled Components
+All input values are controlled by React state using `value` and `onChange`.
+
+### Validation Logic
+Form validation is handled on submit by checking empty fields and email format.
+
+### Character Counter
+The message field has a **300 character limit** with remaining characters displayed.
+
+
+
+## 📁 Project Structure
+
+react-day4
+│── src
+│ ├── App.jsx
+│ ├── main.jsx
+│ └── index.css
+│── index.html
+│── package.json
+│── vite.config.js
+│── README.md
+
+
+## ▶️ How to Run the Project
+
+```bash
+npm install
+npm run dev
