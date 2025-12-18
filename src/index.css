@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #6d4cff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 420px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 6px; /* 🔥 square card */
+}
+
+h1 {
+  text-align: center;
+  color: #4f46e5;
+  margin-bottom: 25px;
+}
+
+.field {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px; /* 🔥 square inputs */
+}
+
+textarea {
+  height: 110px;
+  resize: none;
+}
+
+.char-count {
+  text-align: right;
+  font-size: 12px;
+  color: #555;
+  margin-top: 4px;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+  display: block;
+}
+
+.success {
+  background: #e6fffa;
+  color: #065f46;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 4px; /* 🔥 square button */
+}
+
+button:disabled {
+  background: #9ca3af;
+}
